@@ -1,0 +1,13 @@
+#Version 2
+
+#Ask & validate Age
+    user_age = 0
+    while user_age < 1 or user_age > 100:
+            try:
+                user_age = int(input("What is your age? (Please enter a valid age between 1 and 100)"))
+                if user_age < 1 or user_age > 100:
+                    print("")
+                    print("Please enter a valid age between 1 and 100.")
+            except ValueError:
+                    print("")
+                    print("Please enter a valid age as a number.")
